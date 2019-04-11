@@ -27,9 +27,14 @@
 
     <div>
         <h1>Login</h1>
-        <form action="login">
-            <input type="text">
-            <input type="text">
+        <form action="{% url 'login' %}" method="POST">
+            {% csrf_token %}
+            <label for="username">Username:</label>
+            <input id="username" type="text" name="username">
+            <label for="password">Password:</label>
+            <input id="password" type="password" name="password">
+
+            <input type="submit" value=" SUBMIT ">
         </form>
     </div>
 
