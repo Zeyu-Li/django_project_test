@@ -29,13 +29,14 @@
         <h1>Login</h1>
         <form action="{% url 'login' %}" method="POST">
             {% csrf_token %}
-            <label for="username">Username:</label>
-            <input id="username" type="text" name="username">
-            <label for="password">Password:</label>
-            <input id="password" type="password" name="password">
+
+            {{ UserpassForm }}
 
             <input type="submit" value=" SUBMIT ">
         </form>
+
+        <h2> {{ note }} </h2>
+
     </div>
 
 </body>
