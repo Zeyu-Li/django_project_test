@@ -5,9 +5,4 @@ from .models import User
 
 #     username = forms.CharField(label='Username', max_length=100) 
 
-#     password = forms.CharField(label='Password', max_length=32, widget=forms.PasswordInput) 
-
-class UserpassForm(forms.ModelForm):
-    class Meta:
-        model = Pass
-        fields = ['password']
+password = forms.CharField(label='Password', max_length=100, widget=forms.PasswordInput) 
