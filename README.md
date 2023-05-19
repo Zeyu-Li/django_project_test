@@ -1,5 +1,5 @@
 # Python Django Project
 
 ## About
-This project has been discontinued and is imcomplete
-See new django login project
+This project has been discontinued and is incomplete
+See new Django login project
